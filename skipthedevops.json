@@ -1,0 +1,14 @@
+{
+    "appName": "SampleNodeJSLambda",
+    "runtime": "nodejs16",
+    "trigger": {
+        "type": "sqsQueue",
+        "id": "GloballyUniqueQueueId"
+    },
+    "resources": [
+        {
+            "type": "s3",
+            "id": "GloballyUniqueS3Id"
+        }
+    ]
+}
