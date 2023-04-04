@@ -1,0 +1,10 @@
+{
+    "applicationName": "SampleNodeJSLambda",
+    "runtime": "nodejs16",
+    "entrypointFile": "dist/main.js",
+    "entrypointFunction": "main",
+    "trigger": {
+        "type": "sqs",
+        "uniqueName": "GloballyUniqueQueueId"
+    }
+}
