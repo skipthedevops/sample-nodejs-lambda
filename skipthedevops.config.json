@@ -4,7 +4,7 @@
     "entrypointFile": "dist/main.js",
     "entrypointFunction": "main",
     "trigger": {
-        "type": "sqsQueue",
+        "type": "sqs",
         "uniqueName": "GloballyUniqueQueueId"
     }
 }
