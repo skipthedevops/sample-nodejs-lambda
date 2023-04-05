@@ -1,4 +1,5 @@
 {
+    "id": "23592597229852598",
     "applicationName": "SampleNodeJSLambda",
     "runtime": "nodejs16",
     "entrypointFile": "dist/main.js",
@@ -6,5 +7,6 @@
     "trigger": {
         "type": "sqs",
         "uniqueName": "GloballyUniqueQueueId"
-    }
+    },
+    "buildCommand": "npm run build"
 }
