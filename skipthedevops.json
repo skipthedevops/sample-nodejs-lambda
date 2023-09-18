@@ -1,0 +1,19 @@
+{
+    "schemaVersion": "20230918",
+    "processes": [
+        {
+            "triggers": [
+                {
+                    "type": "sqs",
+                    "uniqueName": "GloballyUniqueQueueId"
+                },
+                {
+                    "type": "http",
+                    "host": "skipthedevops.com",
+                    "subDomain": "node.sample"
+                }
+            ],
+            "dockerImage": "231747432460.dkr.ecr.us-east-1.amazonaws.com/sample-nodejs-lambda"
+        }
+    ]
+}
