@@ -37,8 +37,10 @@ jobs:
     - name: Install libraries
       run: |
         npm install
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
+
+    - name: Compile application
+      run: |
+        npm run build
 
     - name: Authenticate with AWS
       uses: aws-actions/configure-aws-credentials@v4
